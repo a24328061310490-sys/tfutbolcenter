@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fútbol Central ⚽</title>
+
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🎮 CONTROLES -->
+<section class="controls">
+  <select id="liga">
+    <option value="PL">🇬🇧 Premier League</option>
+    <option value="PD">🇪🇸 La Liga</option>
+    <option value="SA">🇮🇹 Serie A</option>
+    <option value="BL1">🇩🇪 Bundesliga</option>
+  </select>
+
+  <div class="buttons">
+    <button onclick="cargarEquipos()">Equipos</button>
+    <button onclick="cargarTabla()">Tabla</button>
+    <button onclick="cargarPartidos()">Partidos</button>
+    <button class="champions" onclick="cargarChampions()">🏆 Champions</button>
+  </div>
+</section>
+
+<!-- 📊 CONTENIDO -->
+<main id="contenido">
+  <div class="bienvenida">
+   <center> <h2>Bienvenido</h2></center>
+    <center><p>Selecciona una liga para ver equipos, tabla</p></center>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <center><p>© 2026 Fútbol Central | Datos simulados </p></center>
+ <center> <h3>iker kharel gurierrez arellano</h3></center>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
