@@ -1,0 +1,200 @@
+/* BASE */
+body{
+  margin:0;
+  font-family:'Outfit',sans-serif;
+  background: linear-gradient(180deg,#020617,#0f172a);
+  color:white;
+}
+
+/* HEADER */
+.header{
+  text-align:center;
+  padding:25px;
+  background: rgba(15,23,42,0.8);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid #1e293b;
+}
+
+.header h1{
+  margin:0;
+  font-size:32px;
+  letter-spacing:1px;
+  color:#38bdf8;
+}
+
+.header p{
+  margin-top:5px;
+  color:#94a3b8;
+}
+
+/* CONTROLES */
+.controls{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  padding:20px;
+  flex-wrap:wrap;
+}
+
+button,select{
+  padding:10px 15px;
+  border-radius:12px;
+  border:none;
+  font-size:14px;
+}
+
+/* SELECT */
+select{
+  background:#0f172a;
+  color:white;
+  border:1px solid #1e293b;
+}
+
+/* BOTONES */
+button{
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  color:white;
+  cursor:pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+button:hover{
+  transform: translateY(-2px);
+  background: linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+/* TABLAS */
+.table{
+  width:95%;
+  margin:20px auto;
+  border-collapse:collapse;
+  background:#111827;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.table th{
+  background: linear-gradient(90deg,#1d4ed8,#2563eb);
+  padding:14px;
+  text-transform:uppercase;
+  font-size:13px;
+  letter-spacing:1px;
+}
+
+.table td{
+  padding:12px;
+  border-bottom:1px solid #374151;
+  font-size:14px;
+}
+
+.table tr{
+  transition: 0.2s;
+}
+
+.table tr:hover{
+  background:#1f2937;
+  transform: scale(1.01);
+}
+
+/* ESCUDOS */
+.logo{
+  width:26px;
+  height:26px;
+  object-fit:contain;
+}
+
+.team-cell{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:500;
+}
+
+/* POSICIONES */
+.top{
+  background: linear-gradient(90deg,rgba(34,197,94,0.2),transparent);
+  border-left:4px solid #22c55e;
+}
+
+.down{
+  background: linear-gradient(90deg,rgba(239,68,68,0.2),transparent);
+  border-left:4px solid #ef4444;
+}
+
+/* PARTIDOS */
+.match{
+  background:#1e293b;
+  margin:12px auto;
+  padding:15px;
+  border-radius:14px;
+  width:90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition:0.2s;
+}
+
+.match:hover{
+  transform: scale(1.02);
+}
+
+/* CHAMPIONS */
+.champions-match{
+  background: linear-gradient(135deg,#0f172a,#020617);
+  border-radius:16px;
+  margin:12px auto;
+  padding:18px;
+  width:90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  border:1px solid #1e293b;
+}
+
+/* ETAPA */
+.stage{
+  color:#60a5fa;
+  font-weight:bold;
+  margin-bottom:12px;
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+/* EQUIPOS */
+.match-teams{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.team{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:500;
+}
+
+/* LOGO PARTIDOS */
+.match-logo{
+  width:30px;
+  height:30px;
+  object-fit:contain;
+}
+
+/* RESULTADO */
+.score{
+  font-size:18px;
+  font-weight:bold;
+  color:#facc15;
+}
+
+/* RESPONSIVE */
+@media (max-width:600px){
+  .match-teams{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .score{
+    font-size:16px;
+  }
+}
